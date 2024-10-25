@@ -10,8 +10,8 @@ public enum UserRole {
 
     GUEST(GET),
     USER(GET, POST),
-    ADMIN(GET, POST, DELETE);
-
+    ADMIN(GET, POST, DELETE),
+    SUPER_ADMIN(GET,PUT,POST,DELETE);
     private final List<String> permission;
 
     // Improved varargs for dynamic params
